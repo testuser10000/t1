@@ -8,5 +8,5 @@ env:
 
 script:
   - echo $A
-  - /bin/sh -c 'echo "text: $A\n" >> filea'
+  - /bin/sh -c 'echo text: $A\n >> filea'
   - cat filea
