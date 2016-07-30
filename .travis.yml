@@ -8,5 +8,5 @@ env:
 
 script:
   - echo $A
-  - /bin/sh -c 'echo text: $A\n >> filea'
-  - cat filea
+  - echo "Commit:" $TRAVIS_COMMIT >> tmp.dsc
+  - cat tmp.dsc
