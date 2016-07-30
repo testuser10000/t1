@@ -4,7 +4,7 @@ language: c
 
 env:
   global:
-    - A="aAa"
+    - A=aAa
 
 script:
   - echo $A
