@@ -1,0 +1,12 @@
+sudo: required
+
+language: c
+
+env:
+  global:
+    - A="a"
+
+script:
+  - echo "a: $A\n" >> filea
+  - echo "a: $A\n" >> filea
+  - cat filea
