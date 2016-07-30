@@ -4,9 +4,11 @@ language: c
 
 env:
   global:
-    - A="a"
+    - A="aAa"
 
 script:
-  - echo "a: $A\n" >> filea
-  - echo "a: $A\n" >> filea
+  - echo $A
+  - echo "text: $A"
+  - echo "text: $A \n" >> filea
+  - echo "test: $A \n" >> filea
   - cat filea
